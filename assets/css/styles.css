@@ -114,3 +114,94 @@ body {
 .facts-item {
   width: calc((100% / 3) - (24px * 2) / 3);
 }
+.form-container {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  background: linear-gradient(271deg, #a5deff 1.14%, #fcfefe 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: #fff;
+  border-radius: 40px;
+  padding: 32px 60px 60px 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-tryzub {
+  margin-bottom: 32px;
+}
+
+.form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #1b1d1f;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-field-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1b1d1f;
+  margin-bottom: 8px;
+}
+
+.form-field-name {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  border: 1px solid #005bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 24px;
+  background-color: #005bbb;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #003f8a;
+}
+.form-field-email {
+  margin-bottom: 48px;
+}
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}

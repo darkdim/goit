@@ -11,6 +11,7 @@
     <!-- Montserrat font with multiple weights -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preload" href="assets/img/gus-anim.gif" as="image">
 </head>
 <body>
 <section class="main-page">
@@ -22,7 +23,7 @@
             <p class="main-page-descr">
                 Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!
             </p>
-            <button class="main-page-btn">Запустити гуся</button>
+            <button class="main-page-btn" id="go-to-form-btn">Запустити гуся</button>
             <img src="assets/img/gus.svg" alt="Banderogus" />
         </div>
     </div>
@@ -59,6 +60,25 @@
     </div>
   </div>
 </section>
+<section class="form-container">
+  <form action="#" class="form">
+    <img src="assets/img/trezub.svg" alt="Tryzub" class="form-tryzub" />
+    <p class="form-text">Поділіся, будь ласка, поштою</p>
+    <p class="form-descr">та запиши гуся до бандерозаврів</p>
 
+    <div class="form-field">
+      <label for="user-name" class="form-field-label">Ім'я</label>
+      <input type="text" id="user-name" class="form-input" />
+    </div>
+
+    <div class="form-field">
+      <label for="user-email" class="form-field-label">Email</label>
+      <input type="email" id="user-email" class="form-input" />
+    </div>
+    <button type="submit" class="form-btn" id="launch-btn">Запустить гуся</button>
+  </form>
+</section>
+
+<script src="assets/js/form.js"></script>
 </body>
 </html>
