@@ -15,7 +15,7 @@ body {
 .wrapper {
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 1170px;
   max-width: 100%;
