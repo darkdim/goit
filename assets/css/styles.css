@@ -1,11 +1,15 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background: #fcfcfc;
+  color: #1b1d1f;
 }
 
+/* ==== MAIN PAGE ==== */
 .main-page {
-    width: 100%;
-    background: linear-gradient(271deg, #a5deff 1.14%, #fcfcfc 100%);
+  width: 100%;
+  background: linear-gradient(271deg, #a5deff 1.14%, #fcfcfc 100%);
+  padding: 60px 0;
 }
 
 .wrapper {
@@ -14,55 +18,59 @@ body {
   justify-content: center;
   align-items: center;
   width: 1170px;
+  max-width: 100%;
   position: relative;
+  gap: 40px;
 }
 
 .main-page-text-container {
-    border-radius: 40px;
-    background: #fff;
-    padding: 60px;
-    box-sizing: border-box;
-    max-width: 600px;
-    text-align: center;
+  border-radius: 40px;
+  background: #fff;
+  padding: 60px;
+  box-sizing: border-box;
+  max-width: 600px;
+  text-align: center;
 }
 
 .main-page-hello-text {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    color: #1b1d1f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .main-page-title {
-    font-size: 64px;
-    line-height: 112%;
-    color: #1b1d1f;
-    margin-top: 0;
-    margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 112%;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .main-page-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #1b1d1f;
-    margin-top: 0;
-    margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .main-page-btn {
-    background-color: #fd9e67;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #fd9e67;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .main-page-btn:hover {
-    background-color: #333;
+  background-color: #e67834;
+}
+
+.main-page-goose {
+  max-width: 500px;
+  height: auto;
 }
 
 .goit-logo {
@@ -71,15 +79,7 @@ body {
   left: 0;
 }
 
-.facts-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 150%;
-  color: #1b1d1f;
-  margin-bottom: 32px;
-  margin-top: 0;
-}
-
+/* ==== FACTS ==== */
 .facts {
   padding-top: 48px;
   padding-bottom: 100px;
@@ -90,34 +90,47 @@ body {
   margin-bottom: 24px;
 }
 
+.facts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  margin: 0 0 32px;
+}
+
 .facts-descr {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  text-align: center;
-  color: #1b1d1f;
   width: 772px;
-  margin: 0 auto 24px;
+  max-width: 100%;
+  margin: 0 auto 48px;
 }
+
+.facts .wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.facts-item {
+  flex: 1;
+  text-align: center;
+}
+
 .facts-item-title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 100%;
-  text-align: center;
-  color: #1e1d1d;
-  margin-top: 0;
-  margin-bottom: 32px;
+  margin: 16px 0 24px;
 }
 
 .facts-item {
   width: calc((100% / 3) - (24px * 2) / 3);
 }
+
+/* ==== FORM ==== */
 .form-container {
   width: 100%;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 20px;
   box-sizing: border-box;
   background: linear-gradient(271deg, #a5deff 1.14%, #fcfefe 100%);
   display: flex;
@@ -128,41 +141,44 @@ body {
 .form {
   background: #fff;
   border-radius: 40px;
-  padding: 32px 60px 60px 60px;
+  padding: 32px 60px 60px;
   box-sizing: border-box;
   text-align: center;
+  max-width: 600px;
+  width: 100%;
 }
 
 .form-tryzub {
   margin-bottom: 32px;
 }
 
-.form-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 100%;
-  color: #1b1d1f;
-  margin-top: 0;
-  margin-bottom: 12px;
+.form-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 8px;
 }
+
+.form-descr {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 32px;
+}
+
 .form-field {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 48px;
 }
 
 .form-field-label {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
-  color: #1b1d1f;
   margin-bottom: 8px;
-}
-
-.form-field-name {
-  margin-bottom: 24px;
 }
 
 .form-input {
@@ -173,11 +189,10 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
 .form-btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   color: #fff;
   cursor: pointer;
   padding: 12px 24px;
@@ -190,17 +205,14 @@ body {
 .form-btn:hover {
   background-color: #003f8a;
 }
-.form-field-email {
-  margin-bottom: 48px;
-}
 
+/* ==== ANIMATED GOOSE ==== */
 .gus-anim {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
   width: 100%;
   z-index: 2;
   pointer-events: none;
